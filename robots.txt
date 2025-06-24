@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /include/
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+Host: xn----7sbabawd4be0afiggicsit6wka.xn--p1ai
+
+# Чистка UTM-меток (корректный формат)
+Clean-param: utm_ /blog/
+Clean-param: utm_ /news/
+
+Sitemap: https://xn----7sbabawd4be0afiggicsit6wka.xn--p1ai//sitemap.xml

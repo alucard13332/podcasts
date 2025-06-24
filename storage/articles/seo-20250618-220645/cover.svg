@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#grad1)" />
+  <path d="M0,300 C200,280 400,320 800,290 L800,400 L0,400 Z" fill="#ffffff" fill-opacity="0.08" />
+  <circle cx="472" cy="98" r="58" fill="#ffffff" fill-opacity="0.08" />
+  <ellipse cx="518" cy="108" rx="83" ry="25" fill="#ffffff" fill-opacity="0.15" />
+  <rect x="586" y="230" width="114" height="82" rx="21" fill="#ffffff" fill-opacity="0.09" />
+  <polygon points="272,334 331,250 377,334" fill="#ffffff" fill-opacity="0.14" />
+  <line x1='742' y1='81' x2='751' y2='157' stroke='#fff' stroke-opacity='0.08' stroke-width='2' />
+<line x1='540' y1='82' x2='625' y2='89' stroke='#fff' stroke-opacity='0.05' stroke-width='2' />
+<line x1='461' y1='259' x2='420' y2='221' stroke='#fff' stroke-opacity='0.08' stroke-width='2' />
+<line x1='13' y1='157' x2='69' y2='94' stroke='#fff' stroke-opacity='0.06' stroke-width='2' />
+<line x1='481' y1='116' x2='387' y2='149' stroke='#fff' stroke-opacity='0.09' stroke-width='2' />
+
+  <text x="50%" y="50%" text-anchor="middle" font-size="32" fill="#ffffff" font-family="Segoe UI, sans-serif" font-weight="bold">
+    студия видеозаписи и подкастов
+  </text>
+</svg>

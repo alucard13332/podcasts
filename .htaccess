@@ -1,0 +1,40 @@
+RewriteEngine On
+
+### 1. Редирект с HTTP на HTTPS и с WWW на без WWW
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+# RewriteRule ^ https://xn----7sbabawd4be0afiggicsit6wka.xn--p1ai%{REQUEST_URI} [L,NE,R=301]
+
+### 2. Редирект с index.php, index.html, index.htm на главную (без слеша)
+RewriteCond %{THE_REQUEST} /index\.(php|html?|php3|phtml) [NC]
+RewriteRule ^(.*)index\.(php|html?|php3|phtml)$ /$1 [R=301,L,NC]
+
+### 3. Удаление слеша в конце URL (если нужно оставить без слеша)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+### 4. Автоматическое добавление слеша (если нужно оставить со слешем)
+# Раскомментируйте, если нужно:
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_URI} !(.*)/$
+# RewriteRule ^(.*)$ /$1/ [L,R=301]
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+</IfModule>
+### --- Auto SEO Box (оставляем без изменений) ---
+<IfModule mod_php7.c>
+    php_value auto_prepend_file /home/wm65003/domains/xn----7sbabawd4be0afiggicsit6wka.xn--p1ai/public_html/autoseo.php
+</IfModule>
+<IfModule mod_php.c>
+    php_value auto_prepend_file /home/wm65003/domains/xn----7sbabawd4be0afiggicsit6wka.xn--p1ai/public_html/autoseo.php
+</IfModule>
+
+### --- Защита файлов AutoSEO ---
+<FilesMatch "\.(json|lock)$">
+    Require all denied
+</FilesMatch>
+
+
+RLimitNPROC 54
