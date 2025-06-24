@@ -261,7 +261,6 @@ header {
 
 .main_header {
   width: 100%;
-  height: 130px;
 }
 
 .main_header_wrapper {
@@ -356,9 +355,6 @@ header {
 }
 
 @media (max-width: 1250px) {
-  .main_header {
-    height: 110px;
-  }
   .main_header_call_block {
     width: 250px;
     height: 120px;
@@ -380,9 +376,6 @@ header {
 }
 
 @media (max-width: 980px) {
-  .main_header {
-    height: 220px;
-  }
   .main_header_menu {
     display: none;
   }
